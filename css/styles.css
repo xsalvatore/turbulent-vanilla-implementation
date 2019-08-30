@@ -1,0 +1,121 @@
+* {
+  --black-base: #111111;
+  --white-base: #ffffff;
+  --dark-blue: #123156;
+  --light-blue: #69addb;
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "overpass";
+  font-weight: 300;
+  color: var(--black-base);
+}
+
+/* ========== header ========== */
+
+header {
+  background-color: var(--dark-blue);
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+header .container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+header .container h1 {
+  font-size: 1.66666rem;
+  margin-bottom: 1rem;
+  color: var(--white-base);
+  font-weight: 500;
+}
+
+header .container p {
+  color: var(--white-base);
+}
+
+header .container p:not(:last-of-type) {
+  margin-bottom: 1rem;
+}
+
+/* ========== grid ========== */
+
+section {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.grid {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: auto;
+  margin-bottom: 1rem;
+}
+
+.grid-item {
+  padding: 3rem;
+  text-align: center;
+  border: 1px solid var(--black-base);
+}
+
+.grid-container button {
+  display: block;
+  appearance: none;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  background-color: var(--light-blue);
+  border: 1px solid var(--black-base);
+  margin: 0 auto 1rem auto;
+}
+
+.grid-container button:hover {
+  cursor: pointer;
+}
+
+/* ========== medium devices ========== */
+
+@media screen and (min-width: 768px) {
+  .app header .container h1 {
+    font-size: 2rem;
+  }
+
+  .app header .container p {
+    max-width: 83.33333%;
+  }
+
+  .grid {
+    grid-template-columns: auto auto;
+  }
+
+  .grid .grid-item {
+    margin: 0;
+  }
+
+  .grid-container button {
+    margin: 0 0 1rem 0;
+    display: block;
+    appearance: none;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    border: 1px solid var(--dark-blue);
+  }
+}
+
+/* ========== large devices ========== */
+
+@media screen and (min-width: 992px) {
+  .grid-container {
+    padding: 0;
+  }
+}
+
+/* ========== x-large devices ========== */
+
+@media screen and (min-width: 1200px) {
+  .grid {
+    grid-template-columns: auto auto auto;
+  }
+}
