@@ -1,4 +1,4 @@
-**Turbulent Coding Challenge (React)**
+**Turbulent Coding Challenge (Vanilla JS)**
 
 **Installation Guide :**
 - Download or clone the repo to your computer
